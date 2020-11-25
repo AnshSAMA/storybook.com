@@ -1,0 +1,535 @@
+/*Desktop*/
+
+    body{
+        background: #2980B9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+    /*footer copyright*/
+    #copr{
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        width: 100%;
+    }
+    footer{
+        background-color: black;
+        padding: 0em;
+        margin: 0em;
+        width: 100%;
+        border: 4px solid black;
+        border-radius: 20px;
+    }
+    /*header nav*/
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0em;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+         padding-left: 2%;
+        padding-right: 2%;
+
+    }
+    ul li{
+        padding:0em;
+        width: 100%;
+        height: 1.7em;
+        background-color: #19547b;
+        color: aliceblue;
+        text-align: center;
+        font-size: 1.3em;
+        font-family: sans-serif;
+    }
+    ul li a{
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 0em;
+        margin: 5px;
+        font-size: 0.7em;
+    }
+    ul li a:hover{
+        background-color: #70e1f5;
+        color: black;
+        opacity: 1;
+    }
+    ul li ul{
+        display: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+    ul li:hover ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+        padding-top: 2.8%;  
+    }
+    h1::first-letter{
+        font-size: 2em;
+        color: steelblue;
+    }
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 2em;
+        color: skyblue;
+        margin-bottom: 0em;
+        margin-top: 0em;
+        margin-left: 0em;  
+    }
+    #topsearch{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; 
+    }
+/*Bread Crumbs*/
+    .bread{
+        padding: 1em;
+        color: cadetblue;
+        font-size: 1.2em;
+    }
+    .bread a{
+        border-bottom: 2px solid black;
+        padding: 0.1em;
+        text-decoration: none;
+        color: black;
+        font-family: monospace;
+    }
+    nav.drop11{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0em;
+    }
+    /*Main*/
+    main{
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    /*heading*/
+    h2{
+       font-size: 3em;
+        margin: 0em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h2, h3{
+        color: #368aff;
+        font-family: 'Allura', cursive;
+        padding-left: 0.4em;
+    }
+    h2::first-letter, h3::first-letter{
+        font-size: 1.7em;
+        color: #ff6d0e;
+    }
+    /*header*/
+    #topsearch{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+    #topsearch h1{
+        margin-top: 0em;
+    }
+    /*main*/
+    main section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2% 2%;
+        padding: 2%;
+    }
+    section p{
+        font-size: 1.6em;
+        padding: 5%;
+        font-family: 'Jua', sans-serif;
+        color: #ff512f
+    }
+    section p:nth-child(even){
+        color: #f09819;
+    }
+    /*Modal*/
+    .modal0, .modal1, .modal2, .modal3, .modal4{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 6%;
+        margin-right: 6%;
+        overflow: hidden;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+.modal0 img, .modal1 img, .modal2 img, .modal3 img, .modal4 img{
+    width: 100%;
+    height: 100%;
+}
+/*Headp and p head*/
+#headp{
+    position: relative;
+}
+.phead{
+    position: relative;
+    top: -30px;
+    left: 30;
+}
+
+    /*modal button*/
+    .closebutton{
+       font-size: 1.7em;
+        margin-left: 1%;
+        margin-top: 1%;
+        position: fixed;
+    }
+    .closebutton:hover{
+        background-color: black;
+        color: white;
+    }
+    /*Iggy Goes Away*/
+#iggyjs{
+    margin-left: 2%;
+    font-weight: 600;
+    font-family: monospace;
+}
+.iggygoes{
+    display: none;
+    position: relative;
+    animation-name: iggyrun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes iggyrun{
+     0%  {left:0px;}
+    25%  {left:300px;}
+    50%  {left:600px;}
+    75%  {left:900px;}
+    100% {left:12000px;}
+}
+    /*Fan Art Styling*/
+    #fan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    /*Cycle 2 Plugin CSS*/
+    /*
+        these are just the default styles used in the Cycle2 demo pages.  
+        you can use these styles or any others that you wish.
+    */
+
+
+    /* set border-box so that percents can be used for width, padding, etc (personal preference) */
+    .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+    .cycle-slideshow { width: 45%; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;
+        background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+
+     }
+
+    /* slideshow images (for most of the demos, these are the actual "slides") */
+    .cycle-slideshow img { 
+        /* 
+        some of these styles will be set by the plugin (by default) but setting them here
+        helps avoid flash-of-unstyled-content
+        */
+        position: absolute; top: 0; left: 0;
+        width: 100%; padding: 0; display: block;
+    }
+
+    /* in case script does not load */
+    .cycle-slideshow img:first-child {
+        position: static; z-index: 100;
+    }
+
+    /* pager */
+    .cycle-pager { 
+        text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+    }
+    .cycle-pager span { 
+        font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+        display: inline-block; color: #ddd; cursor: pointer; 
+    }
+    .cycle-pager span.cycle-pager-active { color: #D69746;}
+    .cycle-pager > * { cursor: pointer;}
+
+
+    /* caption */
+    .cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+    /* overlay */
+    .cycle-overlay { 
+        font-family: tahoma, arial;
+        position: absolute; bottom: 0; width: 100%; z-index: 600;
+        background: black; color: white; padding: 15px; opacity: .5;
+    }
+
+
+    /* prev / next links */
+    .cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+    .cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+    .cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+    .cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+    .disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+    /* display paused text on top of paused slideshow */
+    .cycle-paused:after {
+        content: 'Paused'; color: white; background: black; padding: 10px;
+        z-index: 500; position: absolute; top: 10px; right: 10px;
+        border-radius: 10px;
+        opacity: .5; filter: alpha(opacity=50);
+    }
+
+    /* 
+        media queries 
+        some style overrides to make things more pleasant on mobile devices
+    */
+
+    @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+        .cycle-slideshow { width: 200px;}
+        .cycle-overlay { padding: 4px }
+        .cycle-caption { bottom: 4px; right: 4px }
+    }
+    .center{
+        text-align: center;
+    }
+    /*Review Section*/
+    #review{
+        display: block;
+    }
+    #review blockquote, #review h3{
+        padding: 0em;
+        margin: 0em;
+    }
+    #review h3{
+        color: orang;
+    }
+    .readreview{
+        display: block;
+        text-align: right;
+        font-size: 1.4em;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+        margin-top: 0em;
+        margin: 0em;
+    }
+    #fanreview{
+        margin: -2em;
+        padding: 0em;
+        text-indent: 2.7em;
+    }
+    .quotereview{
+        font-family: 'Poor Story', cursive;
+        font-size: 1.2em;
+        color: blueviolet;
+    }
+    /*Image round borders*/
+    #popup0 img, #popup1 img, #popup2 img, #popup3 img, #popup4 img{
+        border: 2px solid blue;
+        border-radius: 20px;
+    }
+    /*Form Styling*/
+    form div{
+        font-family: 'Permanent Marker', cursive;
+    }
+    form{
+        font-family: 'Cute Font', cursive;
+        font-size: 1.5em;
+        color: palevioletred;
+    }
+    fieldset{
+
+        border-radius: 20px;
+    }
+    .ques{
+        color: rebeccapurple;
+    }
+    /*prev and next button*/
+    #storyi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    /*Author's Page*/
+    #author{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #author img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    #authorwebsite{
+        text-align: right;
+        text-decoration: none;
+        padding: 2%;
+        font-size: 1.2em;
+        color: purple;
+        font-family: sans-serif;
+    }
+    /*Make Your Own Building*/
+    .building{
+        border: 2px solid black;
+        height: 8%;
+        margin: 0.01%
+    }
+    .a{
+        display: none;
+        width: 10%;
+        background-color: lightcyan;
+    }
+    .b{
+        display: none;
+        width: 20%;
+        background-color: darkcyan;
+    }
+    .c{
+        display: none;
+        width: 30%;
+        background-color: lightyellow;
+    }
+    .d{
+        display: none;
+        width: 40%;
+        background-color: yellow;
+    }
+    .e{
+        display: none;
+        width: 50%;
+        background-color: yellowgreen;
+    }
+    .f{
+        display: none;
+        width: 60%;
+        background-color: lightgreen;
+    }
+    .g{
+        display: none;
+        width: 70%;
+        background-color: green;
+    }
+    .h{
+        display: none;
+        width: 80%;
+        background-color: blueviolet;
+    }
+    .i{
+        display: none;
+        width: 90%;
+        background-color: blue;
+    }
+    .j{
+        display: none;
+        width: 100%;
+        background-color: black;
+    }
+    #build{
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .a p{
+        font-size: 1em;
+        text-align: center;
+    }
+    /*Similar Stuff Page*/
+    #simistuff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #simistuff a{
+        text-decoration: none;
+        font-size: 1.5em;
+        padding: 2%;
+        font-family: satisfy, cursive;
+        color: darkblue;
+    }
+    #simistuff a:hover{
+        font-size: 1em;
+        background: black;
+        color: azure; 
+        font-family: sans-serif;
+    }
+
+/*Mobile*/
+@media only screen and (max-width: 600px){
+    body{
+        background-color: lightgoldenrodyellow;
+        font-family: dancing script;
+        font-size: 1.3em;
+    }
+    /*index*/
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0.2em;
+    }
+    .modal0, .modal1, .modal2, .modal3, .modal4{
+        display: none;
+    }
+    #masphinix{
+        display: none;
+    }
+    /*readersarchitect*/
+    .cycle-slideshow img{
+        padding: 2em;
+        width: 70%;
+        height: 80%;
+    }
+    footer{
+        display: none;
+    }
+    /*About Author*/
+    #author img{
+        width: 60%;
+        height: 50%;
+    }
+    /*Similar stuff*/
+        #simistuff{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    #simistuff a{
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 2%;
+            font-family: satisfy, cursive;
+            color: darkblue;
+    }
+     #simistuff a:hover{
+            background: black;
+            color: azure; 
+            font-size: 1em;
+            font-family: sans-serif;
+    }
+}
